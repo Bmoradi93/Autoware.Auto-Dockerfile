@@ -1,0 +1,17 @@
+pip
+setuptools
+Pillow
+h5py
+keras_preprocessing
+matplotlib
+mock
+numpy
+scipy
+sklearn
+pandas
+future
+portpicker
+enum34
+imutils
+labelImg
+keras==2.6.0

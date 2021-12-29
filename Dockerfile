@@ -55,9 +55,9 @@ RUN echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc && \
     echo "export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp" >> ~/.bashrc && \
     source ~/.bashrc
 
-# Install cudNN 
-COPY libcudnn8_8.2.0.53-1+cuda11.3_amd64.deb /root
-RUN cd /root && dpkg -i libcudnn8_8.2.0.53-1+cuda11.3_amd64.deb
+# # Install cudNN 
+# COPY libcudnn8_8.2.0.53-1+cuda11.3_amd64.deb /root
+# RUN cd /root && dpkg -i libcudnn8_8.2.0.53-1+cuda11.3_amd64.deb
 
 RUN sudo rosdep init && rosdep update 
 
