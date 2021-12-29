@@ -67,7 +67,7 @@ RUN source /opt/ros/foxy/setup.bash && \
     sudo apt-get update && \
     vcs import < autoware.auto.foxy.repos && \
     rosdep install -y -i --from-paths src && \
-    colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release && \
+    colcon build --install-base /opt/AutowareAuto --cmake-args -DCMAKE_BUILD_TYPE=Release && \
     sudo apt-get clean && \
     sudo rm -rf /var/lib/apt/lists/*
 
